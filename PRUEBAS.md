@@ -1,10 +1,10 @@
 # Pruebas en el simulador
 
-Hacerlas en este orden durante la presentación. Cada integrante prueba lo que explicó.
+Hacerlas en este orden durante la presentación.
 
 > Antes de empezar: si un ping falla la primera vez, repítelo (el primer paquete se puede perder mientras se resuelve ARP). Si OSPF aún no tiene vecinos, espera unos segundos o pulsa **Fast Forward Time**.
 
-## 1. Ruteo por OSPF — Gerardo
+## 1. Ruteo por OSPF
 
 En **Sucursal** → CLI:
 
@@ -16,7 +16,7 @@ ping 192.168.10.2
 
 **Esperado:** vecino `2.2.2.2` en estado `FULL`; rutas marcadas con `O` hacia 192.168.10.0/24 y 10.10.0.0/16; el ping responde.
 
-## 2. Usuario cliente nivel 5 — Gerardo
+## 2. Usuario cliente nivel 5
 
 En **Sucursal** → CLI, salir con `exit` y volver a entrar con el usuario **cliente** (pide usuario y contraseña):
 
@@ -28,7 +28,7 @@ configure terminal
 
 **Esperado:** `Current privilege level is 5`; `show ip route` funciona; `configure terminal` da `% Invalid input`.
 
-## 3. HTTP y DNS (www.asr.com) — Valeria
+## 3. HTTP y DNS (www.asr.com)
 
 En **PC0** → Command Prompt:
 
@@ -40,7 +40,7 @@ Después **PC0** → Web Browser → `http://www.asr.com`
 
 **Esperado:** `nslookup` responde `10.10.0.3` y el navegador carga la página.
 
-## 4. FTP con usuario alumno (solo List) — Valeria
+## 4. FTP con usuario alumno (solo List)
 
 En **PC0** → Command Prompt:
 
@@ -55,7 +55,7 @@ quit
 
 **Esperado:** inicia sesión, `dir` muestra los archivos y `get` es rechazado (solo tiene permiso de listar).
 
-## 5. ACL en Gerencia — Yael
+## 5. ACL en Gerencia
 
 En **PC2** (o PC3):
 
@@ -70,7 +70,7 @@ show access-lists
 
 **Esperado:** las líneas `deny ... eq www` y `permit ... eq ftp` muestran coincidencias (`matches`).
 
-## 6. PC0 y PC1 con acceso libre — Yael
+## 6. PC0 y PC1 con acceso libre
 
 En **PC1**:
 

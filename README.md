@@ -49,12 +49,10 @@ Práctica en Cisco Packet Tracer: dos sedes (**Sucursal** y **Gerencia**) unidas
 
 Todos los equipos usan como servidor DNS el **10.10.0.2**.
 
-## Equipo
+## Integrantes
 
-| Diapositiva | Integrante |
-|---|---|
-| 1 · Portada y 6 · Pruebas | José María Ortiz Escamilla |
-| 2 · Topología | Karen Pérez Ortiz |
-| 3 · OSPF y privilegios | Gerardo |
-| 4 · DNS, HTTP y FTP | Valeria Soto Hernández |
-| 5 · ACL y acceso libre | Yael Antonio Chávez Atanasio |
+- José María Ortiz Escamilla
+- Karen Pérez Ortiz
+- Gerardo
+- Valeria Soto Hernández
+- Yael Antonio Chávez Atanasio
